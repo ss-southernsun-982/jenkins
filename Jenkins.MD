@@ -1,5 +1,7 @@
 ## Setup jenkins server
 
+Note: using **ngrok** to public host because git hub webhook only access public domain. If you use localhost:8080, you can not triiger any commit from git hub
+
 **Step1:**
 
 Install plugin:
