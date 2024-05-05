@@ -1,7 +1,7 @@
 version: '3.9'
 services:
     jenkins:
-      image: jenkins/jenkins:lts
+      image: jenkins-extra
       container_name: "jenkins"
       privileged: true
       user: root
@@ -11,7 +11,6 @@ services:
       volumes:
         - ./jenkins_home:/var/jenkins_home
         - /var/run/docker.sock:/var/run/docker.sock
-        - $(which docker):/usr/bin/docker
     portainer:
       image: portainer/portainer-ce:latest
       container_name: "portainer"
