@@ -20,7 +20,10 @@ exec to container in step 2:
 docker exec -it <container_name> bash
 
 **Step4:**
-switch to user jenkins then test docker
+run:
+chmod 666 /var/run/docker.sock
+
+Then switch to user jenkins then test docker
 
 su jenkins
 
